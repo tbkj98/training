@@ -1,0 +1,21 @@
+body {
+    color:white;
+    font-size: 40px;
+}
+
+section {
+    display: flex;
+}
+
+section > * {
+    /* text-align: center; */
+    margin: 10px;
+    background-color: red;
+    height: 100px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+

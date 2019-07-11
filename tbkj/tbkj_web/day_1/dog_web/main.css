@@ -1,0 +1,59 @@
+img {
+    height: 200px;
+    position: absolute;
+    bottom: -40;
+    left: 40px;
+    
+}
+
+@keyframes peekaboo {
+    0% { bottom: -40; }
+    50% { bottom: 0; }
+    100% { bottom: -40; }
+}
+
+body {
+    overflow: hidden;
+}
+
+@media only screen and (max-width:767px) {
+    img {
+        animation-name: peekaboo;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+}
+
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 200px;
+    /* animation-name: wheelRotate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+    animation-name: opacityAnim;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes wheelRotate {
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes opacityAnim {
+    0% { opacity: 0; }
+    50% { opacity: 1;}
+    100% { opacity: 0;}
+}
+
+@keyframes opaRot {
+    0% { opacity: 0; }
+    50% { opacity: 1;}
+    100% { opacity: 0; transform: rotate(360deg); }
+} */

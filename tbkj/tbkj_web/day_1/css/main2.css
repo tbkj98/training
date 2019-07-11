@@ -1,0 +1,27 @@
+body {
+    background-color: teal;
+    color: white;
+    width: 1024px;
+    /* margin:0 auto; */
+    text-align: center;
+}
+
+#logo {
+    height: 70px;
+}
+
+#bell {
+    height: 200px;
+}
+
+main {
+    display: flex;
+}
+
+main > * {
+    margin: 20px;
+}
+
+header {
+    text-align: right;
+}

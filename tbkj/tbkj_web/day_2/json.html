@@ -1,0 +1,23 @@
+<script>
+    var obj = {};
+
+    obj.a = 1;
+    // obj.b = 2;
+
+    // var serializedObject = JSON.stringify(obj);
+    // var deserializedObject = JSON.parse(serializedObject);
+
+    // console.log(obj);
+    // console.log(serializedObject);
+    // console.log(deserializedObject);
+
+    var obj2 = Object.assign({}, obj); // merges two objects
+    // to create copy we can merge the object with the empty object to give exact copy
+
+    obj2.a = 5;
+
+    console.log(obj.a);
+    console.log(obj2.a);
+
+
+</script>

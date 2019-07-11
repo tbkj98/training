@@ -1,0 +1,126 @@
+<script>
+    // function Student() {}
+
+    // Student.prototype.carColor = "Red";
+
+    // var s1 = new Student();
+
+    // console.log(s1.carColor);
+
+    // Student.prototype.carColor = "Blue";
+
+    // console.log(s1.carColor);
+
+    // s1.carColor = "Orange";
+    // console.log(s1.carColor);
+
+    // var s2 = new Student();
+    // console.log(s2.carColor);
+
+    // CLOSURE FUNCTION
+    // var counter = function() {
+    //     var counter = 0;
+
+    //     return function() {
+    //         return counter + 1;
+    //     }
+    // };
+
+    // counter();
+
+    // MULITPLE DEFINATION IN CLOSURE FUNCTION
+    // var counter = (function() {
+    //     var num = 0;
+    //     return {
+    //         increase : function() { return ++num; },
+    //         decrease : function() { return --num; }
+    //     };
+    // })();
+
+    // console.log(counter.increase());
+    // console.log(counter.increase());
+    // console.log(counter.increase());
+    // console.log(counter.decrease());
+    // console.log(counter.decrease());
+
+    // ARROW FUNCTION
+    // var printHello = () => {
+    //     console.log('Hello World');
+    // };
+
+    // printHello();
+
+    // VARIABLE HOSITING
+    // var name = "John";
+    // function getName() {
+    //     console.log(name);
+    //     var name = "Smith";
+    //     console.log(name);
+    // }
+
+    // getName();
+
+    // FUNCTION HOISTING
+    // console.log(typeof abc);
+
+    // function abc () {
+    //     console.log('abc');
+    // }
+
+    // ARGUMENTS
+    // sum(1, 2);
+
+    // function sum() {
+    //     console.log(arguments[0] + arguments[1]);
+    // }
+
+
+    // function Student(name, age, section, gender) {
+    //     this.age = age;
+    //     this.name = name;
+    //     this.gender =gender;
+    //     this.section = section;
+    //     this.temp = 1;
+    // }
+
+    // var s1 = new Student('a', 10, 'aa', 'm');
+    // var s2 = new Student('b', 11, 'bb', 'f');
+
+    // s1.name = 'd';
+    // console.log(s1);
+    // console.log(s2);
+
+    // Student.prototype.temp = 2;
+
+    // var s3 = new Student('c', 12, 'cc', 'm');
+    // var s4 = new Student('d', 13, 'dd', 'f');
+
+    // console.log(s3);
+    // console.log(s4);
+
+    // OBJECTS
+    var user = {
+        fname: "John",
+        lname: "Doe",
+        get fullName() {
+            return this.fname + " " + this.lname
+        },
+        set fullName(str) {
+            // console.log(typeof(str));
+            if (typeof (str) == "object") {
+                if (str.lname && str.fname) {
+                    this.fname = str.fname;
+                    this.lname = str.lname;
+                }
+            } else {
+                var temp = str.split(" ");
+                if (temp[0] && temp[1]) {
+                    this.fname = temp[0];
+                    this.lname = temp[1];
+                }
+            }
+        }
+    };
+
+
+</script>

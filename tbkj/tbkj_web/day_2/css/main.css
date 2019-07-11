@@ -1,0 +1,28 @@
+body {
+    font-size: 20px;
+}
+
+#newReminderList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#newReminderList li:nth-child(odd) {
+    background-color: #dddddd;
+}
+
+#newReminderList li {
+    padding: 5px;
+    cursor: pointer;
+}
+
+#addForm input {
+    outline: none;
+}
+
+.alignButton {
+    float: right;
+}
+.completed {
+    text-decoration: line-through;
+}

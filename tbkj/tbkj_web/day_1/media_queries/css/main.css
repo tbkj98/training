@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    font-size: xx-large;
+}
+
+div {
+    border: 1px solid red;
+    height: 200px;
+    width:200px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Media query */
+@media only screen and (max-width:767px) {
+    body {
+        background-color: red;
+        display: block;
+    }
+}

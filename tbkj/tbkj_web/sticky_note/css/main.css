@@ -1,0 +1,49 @@
+body {
+    background-color: aquamarine;
+}
+
+#add-button {
+    padding: 8px;
+    margin: 5px;   
+    float: right;
+    transition: all .3s ease-in-out;
+}
+
+#add-button:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.sticky-div {
+    width: 300px;
+    height: 250px;
+    background-color: red;
+}
+
+.sticky-div img {
+    padding: 5px;
+    margin: 5px;
+    width: 20px;
+    height: 20px;
+    float: right;
+    cursor: pointer;
+}
+
+
+.sticky-form {
+    position: relative;
+    top: 30px;
+}
+
+.label-style {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 8px;
+    color: white;
+}
+
+.input-style {
+    width: 95%;
+    margin: 5px;
+    box-sizing: border-box;
+}

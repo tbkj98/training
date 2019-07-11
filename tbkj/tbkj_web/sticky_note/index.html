@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js" defer></script>
+    <title>Sticky Notes</title>
+</head>
+
+<body>
+    <!-- Top header -->
+    <header>
+        <button id="add-button">Add</button>
+    </header>
+
+    <!-- Notes main section -->
+    <section id="main-section">
+        <div class="sticky-div">
+            <img src="https://cdn4.iconfinder.com/data/icons/flat-design-basic-set-10-1/24/symbol-cancel-cross-red-512.png"
+                alt="Delete">
+
+            <form class="sticky-form">
+                <label class="label-style" for="subject">Subject</label>
+                <input class="input-style" type="text" name="subject" id="subject" required autofocus>
+                <label class="label-style" for="note">Note</label>
+                <textarea class="input-style" name="note" id="note" cols="30" rows="5" required></textarea>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>

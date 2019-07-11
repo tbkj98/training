@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="clock"></div>
+    <script>
+
+        let clockDiv = document.getElementById('clock');
+
+        // console.log(date);
+        // let firstDate = new Date().toString().substring(22, 24);
+        // let secondDate = new Date().toString().substring(22, 24);
+
+        setInterval(setClock, 1000);
+
+        // while (true) {
+        //     let date = new Date();
+                
+        //     date = date.toString();
+        //     date = date.substring(22, 24);
+
+        //     if ((secondDate - firstDate) === 1) {
+        //         clockDiv.innerHTML = new Date().toString();
+        //     }
+        // }
+
+        function setClock() {
+            clockDiv.innerHTML = new Date().toString();
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<style>
+    /* div:nth-child(4) {
+        background: green;
+    } */
+
+    ul {
+        border: 1px solid red;
+    }
+
+    ul li:nth-child(odd) {
+        background: grey;
+    }
+
+    a:hover {
+        background: pink;
+    }
+
+    #specialDiv {
+        background: green;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 200px;
+    }
+
+    #specialDiv::before {
+        display: inline-block;
+        background: yellow;
+        margin-right: 10px;
+        content: 'OH';
+    }
+
+    #specialDiv::after {
+        display: inline-block;
+        background: yellow;
+        margin-right: 10px;
+        content: 'YEAH';
+    }
+
+    section + span {
+        background: yellow;
+    }
+
+    #numbers div:nth-of-type(4){
+        font-weight: bold;
+
+    }
+
+</style>
+<div id="numbers">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <span>oh</span>
+    <div>4</div>
+    <div>5</div>
+</div>
+
+<div>1</div>
+<span>span</span>
+<section>2</section>
+<span>span</span>
+<section>3</section>
+<span>span</span>
+
+
+
+
+<div id="specialDiv">I am a Div.</div>
+
+<ul>
+    <li>Australia</li>
+    <li>India</li>
+    <li>England</li>
+    <li>New Zealand</li>
+    <li>Pakistan</li>
+</ul>
+
+<div>1</div>
+<div id="">2</div>
+<div>3</div>
+<div>4</div>
+<div>5</div>
+
+<a href="http://www.google.com">Click Me!</a>
